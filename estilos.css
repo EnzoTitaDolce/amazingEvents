@@ -1,0 +1,111 @@
+
+body{
+    background-color: rgb(206, 206, 206);
+}
+.header{
+    background-color: rgb(206, 206, 206);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.header a{
+    margin-top: 5px;
+}
+main{
+    min-height: 403px;
+    background-color: rgb(206, 206, 206);
+}
+#mainBar{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border:2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    margin:10px 0px;
+}
+.cardP{
+    background-color: rgb(63, 63, 63); 
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;    
+}
+#contact{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 403px;
+}
+#contact form{
+    margin: 20px;
+    padding: 10px 0px;
+    height: 65vh;
+}
+label{
+    font-weight: bolder;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+textarea{
+    height: 30vh;
+}
+
+input[type="submit"]{
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#stats{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+#statsTable,th,td,tr{
+    border:1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+}
+tr,td{
+    height: 20px;
+}
+th{
+    background-color: rgb(140, 140, 140);
+}
+.tdresaltado{
+    background-color: rgb(203, 202, 202);
+}
+#footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#footerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
