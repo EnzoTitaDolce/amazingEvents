@@ -1,0 +1,125 @@
+
+body{
+    background-color: rgb(206, 206, 206);
+}
+.header{
+    background-color: rgb(206, 206, 206);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.header a{
+    margin-top: 5px;
+}
+main{
+    min-height: 749px;
+    background-color: rgb(206, 206, 206);
+}
+#mainBar{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    border:2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+#cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.card{    
+    margin:10px 0px;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.3s;
+}
+
+div[name='eventoItem']:hover{
+    background-color: rgb(130, 130, 130);
+    color: white;
+    box-shadow: 3px 3px 5px 5px rgb(63, 63, 63);
+}
+div[name='eventoItem']:hover .cardP{
+    background-color: black;
+    color: white;   
+    font-weight: bolder;
+}
+.cardP{
+    background-color: rgb(63, 63, 63); 
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+#contact{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 403px;
+}
+#contact form{
+    margin: 20px;
+    padding: 10px 0px;
+    height: 65vh;
+}
+label{
+    font-weight: bolder;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+textarea{
+    height: 30vh;
+}
+
+input[type="submit"]{
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#stats{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+#statsTable,th,td,tr{
+    border:1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    text-align: center;
+}
+tr,td{
+    height: 20px;
+}
+th{
+    background-color: rgb(140, 140, 140);
+}
+.tdresaltado{
+    background-color: rgb(203, 202, 202);
+}
+#footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+#footerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
