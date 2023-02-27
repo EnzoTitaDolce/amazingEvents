@@ -2,8 +2,16 @@
 body{
     background-color: rgb(206, 206, 206);
 }
+.navbar#nav{
+    /*background-color: rgb(62, 136, 246);
+    background-color: #1F271B;*/
+    background-color: salmon;
+}
+.nav-link{
+    color: white;
+}
 .header{
-    background-color: rgb(206, 206, 206);
+    background-color: beige;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -14,7 +22,7 @@ body{
 }
 main{
     min-height: 749px;
-    background-color: rgb(206, 206, 206);
+    background-color: beige;
 }
 #mainBar{
     width:90%;
@@ -25,9 +33,22 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 10px;
-    border:2px solid black;
     padding: 10px;
     border-radius: 10px;
+    background-color: aquamarine;
+}
+.check{
+    cursor: pointer;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #888;
+    border-radius: 10px;
+}
+input[type="checkbox"]:checked{
+    background-color: rgb(62, 62, 62);
+    color: white;
 }
 #cards{
     display: flex;
@@ -38,26 +59,64 @@ main{
 }
 .card{    
     margin:10px 0px;
+    /*background-color: #66ab8c;*/
+    background-color: aquamarine;
     transition: background-color 0.5s, color 0.5s, box-shadow 0.3s;
+    color:black;
 }
 
 div[name='eventoItem']:hover{
-    background-color: rgb(130, 130, 130);
+    /*background-color: rgb(130, 130, 130);*/
+    background-color: salmon;
     color: white;
     box-shadow: 3px 3px 5px 5px rgb(63, 63, 63);
 }
 div[name='eventoItem']:hover .cardP{
-    background-color: black;
-    color: white;   
+    /*background-color: black;*/
+    background-color: aquamarine;
+    color: black;   
     font-weight: bolder;
 }
+
+
 .cardP{
-    background-color: rgb(63, 63, 63); 
+    /*background-color: rgb(63, 63, 63); */
+    background-color: #66ab8c;
     color:white;
     padding: 5px;
     border-radius: 5px;
     width: 100%;
     transition: background-color 0.5s, color 0.5s, font-weight 0.5s;
+}
+.detailsLink{
+    text-decoration: none;
+    margin-bottom: 5px;
+    background-color: salmon;
+    color:white;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+@keyframes linkanimado {
+    0% {background-color: salmon;
+          color:white;
+        padding-left:5% ;}
+    50%{
+        background-color: beige;
+        color:black;
+        padding-left: 65%;}
+    100%{
+        background-color:salmon;
+        padding-left: 5%;
+    }
+}
+
+div[name='eventoItem']:hover .detailsLink{
+    animation-name: linkanimado;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
 #contact{
     width: 80%;
@@ -117,6 +176,7 @@ th{
     position: relative;
     bottom: 0;
     width: 100%;
+    background-color: salmon;
 }
 #footerContainer{
     display: flex;
