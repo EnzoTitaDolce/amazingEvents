@@ -1,0 +1,56 @@
+let eventosFiltrados=[];
+let seleccionados=document.getElementsByName('eventoItem')
+function filtrarPorCategoria(event){
+    let clicked=event.currentTarget
+    if(clicked.checked){
+        for(let item of seleccionados){
+          if(item.getAttribute('category')!=clicked.value){
+              if(item.style.display!='none'){
+                  item.style.display='none'
+                  item.setAttribute('checkeado','false')
+              }
+            }else{//si la categoría es igual a la checkeada
+                if(item.style.display=='none' && item.getAttribute('checkeado')==false){
+                    item.style.display='flex'
+                }    
+            }
+        }
+    }
+    /* else{
+        for(let item of seleccionados){
+            if(item.getAttribute('category')!=clicked.value)  
+              item.style.display='block'
+          }
+    } */
+    
+    /*if(clicked.checked==true){
+        console.log(clicked.value)   
+        for (let evento of eventos.events){
+            if (evento.category==clicked.value){
+                eventosFiltrados.push(evento)
+            }
+        }
+        for(let item of eventosFiltrados){
+            crearElementos(item,'seleccionados')
+        }
+    }else{
+        let eventosTemporales=[]
+        for(let evento of eventosFiltrados){
+            if(evento.category!=clicked.value){
+                eventosTemporales.push(evento)
+            }
+        }
+        eventosFiltrados=eventosTemporales
+        for(let item of eventosFiltrados){
+            crearElementos(item,'seleccionados')
+        }
+    }
+    if(eventosFiltrados==null){
+        let seleccionados=document.getElementById('seleccionados')
+        seleccionados.removeChild('eventoItem')
+    }
+    console.log(eventosFiltrados)*/
+    //console.log(seleccionados[1].hasAttribute('category'))
+    
+
+    }
